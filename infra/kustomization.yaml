@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 #  - yaml
   - ../deploy/ns.yaml
-  - .. deploy/deployment.yaml
+  - ../deploy/deployment.yaml
