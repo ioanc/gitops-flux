@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: deploy-gitops-flux2
+  name: deploy-gitops-flux2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deploy-gitops-flux2
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: deploy-gitops-flux2
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
