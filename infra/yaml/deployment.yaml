@@ -4,7 +4,7 @@ metadata:
   labels:
     app: deploy-gitops-flux2
   name: deploy-gitops-flux2
-  namespace: flux2
+  namespace: default2
 spec:
   replicas: 1
   selector:
