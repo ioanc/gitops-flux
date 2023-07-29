@@ -24,7 +24,7 @@ metadata:
     metadata.weave.works/description: This is the Weave GitOps Dashboard.  It provides
       a simple way to get insights into your GitOps workloads.
   name: ww-gitops
-  namespace: cluter-config
+  namespace: cluster-config
 spec:
   chart:
     spec:
