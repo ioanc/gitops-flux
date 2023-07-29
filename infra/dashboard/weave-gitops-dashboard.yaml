@@ -24,7 +24,7 @@ metadata:
     metadata.weave.works/description: This is the Weave GitOps Dashboard.  It provides
       a simple way to get insights into your GitOps workloads.
   name: ww-gitops
-  namespace: cluster-config
+  namespace: flux-system
 spec:
   chart:
     spec:
@@ -32,6 +32,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ww-gitops
+        namespace: cluster-config
   interval: 1h0m0s
   values:
     adminUser:
