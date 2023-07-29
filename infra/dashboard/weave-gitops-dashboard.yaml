@@ -32,7 +32,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ww-gitops
-        namespace: cluster-config
+        namespace: flux-system
   interval: 1h0m0s
   values:
     adminUser:
